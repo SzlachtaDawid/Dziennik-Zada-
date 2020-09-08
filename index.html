@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <video autoplay loop muted class="video">
-        <source src="video/Sun - 44849.mp4" type="video/mp4">
-    </video>
-    <section>
+    <section class="add">
         <div>
-            <h1 class="title">DZIENNIK ZADAŃ</h1>
+            <h1 class="title">LISTA ZADAŃ</h1>
             <form action="">
-                <input type="text" maxlength="50">
+                <input type="text" maxlength="100" placeholder="np.Zrobić zakupy">
                 <button>Dodaj zadanie</button>
             </form>
-            <h1>Liczba zadań: <span>0</span></h1>
-            <ul></ul>
+            <h1 class="number">Liczba zadań: <span>0</span></h1>
         </div>
+    </section>
+    <section class="toDo">
+        <ul class="container"></ul>
     </section>
     <script src="main.js"></script>
 </body>

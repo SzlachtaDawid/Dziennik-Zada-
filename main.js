@@ -1,5 +1,4 @@
 const toDoList = [];
-
 const form = document.querySelector('form');
 const ul = document.querySelector('ul');
 const taskNumber = document.querySelector('h1 span');
@@ -24,11 +23,8 @@ const addTask = (e) => {
     task.className = 'task';
     task.innerHTML = titleTask + "<button>X</button>";
     toDoList.push(task)
-    renderList()
-
     ul.appendChild(task);
     input.value = "";
-    // const liItems = document.querySelectorAll('li.task').length;
     taskNumber.textContent = listItems.length;
     task.querySelector('button').addEventListener('click', removeTask);
 
@@ -39,6 +35,7 @@ const renderList = () => {
     toDoList.forEach((toDoElement, key) => {
         toDoElement.dataset.key = key;
         ul.appendChild(toDoElement);
+        console.log(toDoElement)
     })
 }
 form.addEventListener('submit', addTask)
